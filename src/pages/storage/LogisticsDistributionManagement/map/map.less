@@ -1,0 +1,205 @@
+// 地图
+    .mapS{
+        position: fixed;
+        top: 200px;
+        right: 0;
+        left: 60%;
+        bottom: 10%;
+        border-radius: 4px;
+        z-index: 100;
+        opacity: 1;
+        transition: 1s;
+    }
+    .mapH{
+        position: fixed;
+        top: 200px;
+        right: 0;
+        left: 60%;
+        bottom: 10%;
+        border-radius: 4px;
+        transition: 1s;
+        opacity: 0;
+        z-index: -100;
+    }
+    .map{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .maskRight{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 100;
+        }
+    }
+    .contentRight{
+        position: relative;
+        width: 200px;
+        height: 108px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 0px 14px 0px rgba(48,49,51,0.2);
+        border-radius:4px;
+    }
+    .title{
+        height: 24px;
+        box-sizing: border-box;
+        font-size: 0;
+    }
+    .title>span:nth-child(1){
+        display: inline-block;
+        width:60px;
+        height: 100%;
+        background:rgba(24,144,255,1);
+        color: #FFFFFF;
+        font-size: 12px;
+        text-align: center;
+        line-height: 24px;
+        border-radius:4px 0px 4px 0px;
+    }
+    .title>span:nth-child(2){
+        display: inline-block;
+        margin-left: 12px;
+        width:120px;
+        height:17px;
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(144,147,153,1);
+        line-height:17px;
+        text-align: center;
+        line-height: 24px;
+    }
+    .namePone{
+        height: 22px;
+        box-sizing: border-box;
+        font-size: 0;
+        padding-left: 10px;
+    }
+    .namePone>span:nth-child(1){
+        display: inline-block;
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(48,49,51,1);
+        line-height:22px;
+    }
+    .namePone>span:nth-child(2){
+        display: inline-block;
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(48,49,51,1);
+        line-height:22px;
+        margin-left: 20px;
+    }
+    .address{
+        height: 22px;
+        box-sizing: border-box;
+        font-size: 0;
+        padding-left: 10px;
+    }
+    .address>span:nth-child(1){
+        display: inline-block;
+        font-size:12px;
+        width: 150px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(48,49,51,1);
+        overflow: hidden;/*超出部分隐藏*/
+        white-space: nowrap;/*不换行*/
+        text-overflow:ellipsis;/*超出部分文字以...显示*/
+        vertical-align: middle;
+    }
+    .line{
+        padding: 10px 20px;
+    }
+    .line:hover{
+        background: #eeeeee;
+        border-radius: 0 0 4px 4px;
+    }
+    .line>span{
+        width:36px;
+        height:17px;
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(24,144,255,1);
+        line-height:17px;
+    }
+    .maskH{
+        width:200px;
+        height:220px;
+        position: absolute;
+        top: 90px;
+        display: none;
+        }
+        .maskS{
+            width:200px;
+            height:220px;
+            position: absolute;
+            top: 90px;
+            display: block;
+        }
+        .lineRight{
+            width:200px;
+            height:212px;
+            background:rgba(255,255,255,1);
+            box-shadow:0px 0px 14px 0px rgba(48,49,51,0.2);
+            border-radius:4px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .lineRight>div:nth-child(1){
+            height:17px;
+            font-size:12px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(144,147,153,1);
+            line-height:17px;
+            padding: 10px 20px 28px 0;
+            background: #EEEEEE;
+            padding-left: 10px;
+        }
+        .lineRight>div:nth-child(2){
+            height: 150px;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        .lineArr>div{
+            height:17px;
+            font-size:12px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(96,98,102,1);
+            line-height:17px;
+            border-bottom: 1px solid #EEEEEE;
+            padding: 5px 0 23px 0;
+            z-index: 100;
+            overflow: hidden;/*超出部分隐藏*/
+            white-space: nowrap;/*不换行*/
+            text-overflow:ellipsis;/*超出部分文字以...显示*/
+        }
+        .lineArr>div:hover{
+            background: #E6F7FF;
+        }
+        .lineFind {
+            height: 30px;
+            overflow: auto;
+            line-height: 30px;
+            .path {
+                display: inline-block;
+                width: 100px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow:ellipsis;
+                margin-right: 10px;
+                padding-left: 5px;
+            }
+        }
+
+
+
+        

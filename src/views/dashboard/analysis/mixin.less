@@ -1,0 +1,130 @@
+.reset {
+    /deep/ .ant-input {
+        background:transparent;
+        border:1px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+        height: 30px;
+        &::-webkit-input-placeholder{
+            color: #fff
+        }
+    }
+    /deep/ .ant-select-selection{
+        background:transparent;
+        border:1px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+        height: 30px;
+        &::-webkit-input-placeholder{
+            color: #fff
+        }
+    }
+    /deep/ .ant-calendar-picker{
+        &:hover{
+            .ant-calendar-picker-input:not(.ant-input-disabled){
+                border-color: #fff
+            }
+        }
+    }
+    /deep/ .ant-radio-inner{
+        border:1px solid rgba(225,228,235,1);
+        background: transparent;
+        &::after{
+            background:#fff
+        }
+    }
+    /deep/ .ant-calendar-picker-icon{
+        color: #fff
+    }
+    /deep/ .ant-radio-wrapper{
+        font-size: 12px;
+        color: #fff
+    }
+}
+.order-returns{
+    color:#fff;
+    padding:17px 24px 21px;
+    .num-1{
+        text-align: center;
+        font-size:90px;
+        height:90px;
+        line-height: 90px;
+        font-family:HiraMaruPro-W4;
+        font-weight:normal;
+        span{
+            font-size:18px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+        }
+    }
+    .num-2{
+        text-align: center;
+        height:40px;
+        font-size:28px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        span{
+            display: block;
+            height:17px;
+            font-size:12px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:17px;
+        }
+    }
+}
+.order{
+    height:181px;
+    background:linear-gradient(141deg,rgba(55,189,246,1) 0%,rgba(80,91,246,1) 100%);
+    box-shadow:0px 0px 14px 0px rgba(50,88,241,0.4);
+    border-radius:4px;
+}
+//退货
+.returns{
+    height:181px;
+    background:linear-gradient(141deg,rgba(252,190,115,1) 0%,rgba(244,82,82,1) 100%);
+    box-shadow:0px 0px 14px 0px rgba(245,82,82,0.4);
+    border-radius:4px;
+}
+.mini-table{
+    margin:0 9px;
+    /deep/ .ant-table-content{
+        padding-bottom:10px;
+        background: #fff;
+    }
+    /deep/ .ant-table-row{
+        td{
+            padding: 8px!important;
+        }
+    }
+}
+
+
+.table{
+    height:320px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    padding: 20px!important;
+    display: inline-block;
+    background:rgba(255,255,255,1);
+    /deep/ .ant-table-content{
+        padding-bottom:28px;
+        border-radius:4px;
+        border:1px solid rgba(225,228,235,1);
+    }
+}
+
+/deep/ .ant-table-row{
+    font-size:12px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(96,98,102,1);
+}
+
+.interior{
+    margin-bottom: 12px;
+    height:340px;
+    background:linear-gradient(319deg,rgba(21,210,229,1) 0%,rgba(74,226,228,1) 100%);
+    box-shadow:0px 0px 14px 0px rgba(34,215,229,0.4);
+    border-radius:4px;
+}

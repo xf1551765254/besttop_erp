@@ -1,0 +1,12 @@
+# 文件
+.DS_Store
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# 目录
+node_modules/
+dist/
+docs/
+.vscode
+.idea

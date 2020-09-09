@@ -1,0 +1,66 @@
+<!--
+ * @Description: ERP
+ * @Version: ^1.2.0
+ * @Company: BestTop
+ * @Author: Oak
+ * @LastEditors: Oak
+ * @Date: 2019-02-27 19:08:49
+ * @LastEditTime: 2019-04-02 15:50:12
+ -->
+<template>
+  <div :style="{ padding: '0 0 32px 32px' }">
+    <h4 :style="{ marginBottom: '20px' }">{{ title }}</h4>
+    <v-chart
+      height="254"
+      :data="data"
+      :forceFit="true"
+      :padding="['auto', 'auto', '40', '50']">
+      <v-tooltip />
+      <v-axis />
+      <v-bar position="x*y"/>
+    </v-chart>
+  </div>
+</template>
+
+<script>
+const data = []
+for (let i = 0; i < 12; i += 1) {
+    data.push({
+        x: `${i + 1}月`,
+        y: Math.floor(Math.random() * 1000) + 200
+    })
+}
+const tooltip = [
+    'x*y',
+    (x, y) => ({
+        name: x,
+        value: y
+    })
+]
+const scale = [{
+    dataKey: 'x',
+    min: 2
+}, {
+    dataKey: 'y',
+    title: '时间',
+    min: 1,
+    max: 22
+}]
+
+export default {
+    name: 'Bar',
+    props: {
+        title: {
+            type: String,
+            default: ''
+        }
+    },
+    data () {
+        return {
+            data,
+            scale,
+            tooltip
+        }
+    }
+}
+</script>
