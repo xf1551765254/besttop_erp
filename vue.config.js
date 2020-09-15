@@ -5,6 +5,7 @@
  * @Author: Oak
  * @LastEditors: haile
  * @Date: 2019-02-27 19:08:49
+ * try
  * @LastEditTime: 2019-05-28 16:50:00
  */
 const path = require('path')
@@ -12,7 +13,7 @@ const webpack = require('webpack')
 const {
     BundleAnalyzerPlugin
 } = require('webpack-bundle-analyzer')
-// gzip压缩插件
+    // gzip压缩插件
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
 function resolve(dir) {
@@ -45,10 +46,10 @@ module.exports = {
         if (process.env.NODE_ENV === 'production') {
             // 为生产环境修改配置...
             config.plugins = [...config.plugins, ...prodPlugins]
-            // config.optimization.minimizer[0].options.terserOptions.compress.warnings = false
-            // config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true
-            // config.optimization.minimizer[0].options.terserOptions.compress.drop_debugger = true
-            // config.optimization.minimizer[0].options.terserOptions.compress.pure_funcs = ['console.log']
+                // config.optimization.minimizer[0].options.terserOptions.compress.warnings = false
+                // config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true
+                // config.optimization.minimizer[0].options.terserOptions.compress.drop_debugger = true
+                // config.optimization.minimizer[0].options.terserOptions.compress.pure_funcs = ['console.log']
             config.optimization.splitChunks = {
                 ...config.optimization.splitChunks,
                 cacheGroups: {
